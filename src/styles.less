@@ -1,0 +1,90 @@
+:root {
+  --color-one: #084a93;
+  --color-two: #0b5bb1;
+  --color-three: #0a69d1;
+  --color-four: #0e76e5;
+
+  --site-bg: rgb(245, 242, 242);
+}
+
+html {
+  font-size: 10px;
+  background-color: var(--site-bg);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  margin: 0 24px;
+}
+
+h1 {
+  margin: 0 0 12px 0;
+  font-weight: 400;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+h2 {
+  margin: 12px 0 10px 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.section {
+  padding-top: 32px;
+}
+
+.carousel {
+  .flickity-prev-next-button {
+    top: unset;
+    transform: none;
+    width: 30px;
+    height: 30px;
+    bottom: -42px;
+    z-index: 2;
+    background-color: var(--color-two);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: var(--color-one);
+    }
+
+    &:active {
+      opacity: unset;
+    }
+  
+    svg {
+      fill: white;
+      top: unset;
+      left: unset;
+      width: 50%;
+      height: 50%;
+    }
+
+    &.previous {
+      right: 35px;
+      left: unset;
+    }
+  
+    &.next {
+      right: 0;
+    }
+  }
+
+  .flickity-page-dots {
+    height: 30px;
+    bottom: -42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      margin: 0 4px;
+    }
+  }
+}

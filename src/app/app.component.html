@@ -1,6 +1,6 @@
 <div class="app" [attr.data-dark-mode]="darkMode">
   <div class="app-content">
-    <app-header [applyIntroScrolled]="pastIntro"></app-header>
+    <app-header [applyIntroScrolled]="pastIntro" (toggleDarkMode)="toggledDarkMode()"></app-header>
     <app-intro (checkIntroScrolled)="scrolledPastIntro($event)"></app-intro>
     <app-about></app-about>
     <app-skills></app-skills>

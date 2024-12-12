@@ -19,9 +19,14 @@ export class AppComponent {
   title = 'portfolio';
   pastIntro = false;
   darkMode = false;
+  passedValue = '';
 
   scrolledPastIntro(newValue: boolean) {
     this.pastIntro = newValue;
+  }
+
+  toggledDarkMode() {
+    this.darkMode = !this.darkMode;
   }
 
   ngOnInit() {

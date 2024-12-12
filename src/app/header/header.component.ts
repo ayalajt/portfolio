@@ -1,4 +1,4 @@
-import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { Component, Input, ViewEncapsulation, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -9,4 +9,10 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
 })
 export class HeaderComponent {
   @Input() applyIntroScrolled = false;
+  @Output() toggleDarkMode = new EventEmitter<any>(); 
+
+  darkModeClick() {
+    console.log('clicked')
+    this.toggleDarkMode.emit();
+  }
 }

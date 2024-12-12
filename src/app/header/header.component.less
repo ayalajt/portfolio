@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  background-color: #090979;
+  border-bottom: 1px solid #090979;
+  transition: all .5s ease;
+
+  color: white;
+  height: var(--headerHeight);
+
+  &-hamburger {
+    position: absolute;
+    left: 12px;
+
+    &-button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0 5px;
+
+      svg {
+        fill: white;
+      }
+    }
+  }
+
+  &-initials {
+    display: flex;
+    gap: 1px;
+    font-weight: 800;
+    font-size: 2.6rem;
+  }
+
+  &[data-past-intro="true"] {
+    background-color: var(--site-bg);
+    color: var(--color-two);
+    border-bottom: 1px solid #d0d9db;
+
+    .header {
+      &-hamburger-button svg {
+        fill: var(--color-two);
+      }
+    }
+  }
+}

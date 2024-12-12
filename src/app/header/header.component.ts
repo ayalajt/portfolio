@@ -1,10 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   imports: [],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.less'
+  styleUrl: './header.component.less',
+  encapsulation: ViewEncapsulation.None,
 })
 export class HeaderComponent {
   @Input() applyIntroScrolled = false;

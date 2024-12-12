@@ -73,10 +73,23 @@
         fill: var(--color-two);
       }
 
-      &-nightmode-button svg {
-        path {
-          stroke: var(--color-two);
-        }
+      &-nightmode-button svg path {
+        stroke: var(--color-two);
+      }
+    }
+  }
+
+  [data-dark-mode="true"] & {
+    &-nightmode-button svg path {
+      fill: white;
+    }
+
+    &[data-past-intro="true"] {
+      border-color: black;
+      --color-two: var(--color-four);
+
+      .header-nightmode-button svg path {
+        fill: var(--color-two);
       }
     }
   }

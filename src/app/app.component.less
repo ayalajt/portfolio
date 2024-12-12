@@ -1,0 +1,12 @@
+.app {
+  background-color: var(--site-bg);
+
+  &-content {
+    margin: 0 24px;
+  }
+
+  &[data-dark-mode="true"] {
+    --site-bg: var(--site-bg-dark);
+    color: white; 
+  }
+}

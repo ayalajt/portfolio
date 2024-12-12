@@ -14,15 +14,41 @@
   color: white;
   height: var(--headerHeight);
 
-  &-hamburger {
+  &-buttons {
     position: absolute;
-    left: 12px;
+    right: 12px; 
+    display: flex;
+    align-items: center;
+  }
+
+  &-nightmode {
+    &-button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      padding: 1px 4px 0 5px;
+
+      svg {
+        fill: transparent;
+        width: 18px;
+        height: 18px;
+
+        path {
+          stroke: white;
+        }
+      }
+    }
+  }
+
+  &-hamburger {
 
     &-button {
       background-color: transparent;
       border: none;
       cursor: pointer;
-      padding: 0 5px;
+      padding: 1px 5px 0 4px;
+      height: 24px;
+
 
       svg {
         fill: white;
@@ -45,6 +71,12 @@
     .header {
       &-hamburger-button svg {
         fill: var(--color-two);
+      }
+
+      &-nightmode-button svg {
+        path {
+          stroke: var(--color-two);
+        }
       }
     }
   }

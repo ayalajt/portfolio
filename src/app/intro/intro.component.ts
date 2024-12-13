@@ -1,12 +1,14 @@
-import { Component, ViewChild, ElementRef, HostListener, Input, Output, EventEmitter } from '@angular/core';
+import { Component, ViewChild, ElementRef, HostListener, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 
 @Component({
   selector: 'app-intro',
   imports: [],
   templateUrl: './intro.component.html',
-  styleUrl: './intro.component.less'
+  styleUrl: './intro.component.less',
+  encapsulation: ViewEncapsulation.None
 })
+
 export class IntroComponent {
   @ViewChild('intro') intro!: ElementRef;
   @Output() checkIntroScrolled = new EventEmitter<boolean>();

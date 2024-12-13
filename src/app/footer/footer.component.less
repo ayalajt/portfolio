@@ -1,16 +1,11 @@
 .footer {
   --triangle-size: 50px;
-  // background-color: var(--color-two);
-  // background: linear-gradient(180deg, rgba(11,91,177,1) 37%, rgba(10,105,209,1) 85%);
   background: linear-gradient(180deg, rgba(9,9,121,1) 37%, rgba(6,84,170,1) 89%);
-
   color: white;
   position: relative;
-  margin-left: -24px;
-  padding: 24px;
-  padding-top: calc(var(--triangle-size) + 24px);
+  margin-left: calc(-1 * var(--gutter));
+  padding: calc(var(--triangle-size) + 32px) var(--gutter) 32px var(--gutter);
   width: 100%;
-  // margin-top: 48px;
   margin-top: 96px;
 
   &-content {
@@ -27,9 +22,9 @@
     background-color: var(--site-bg);
     transition: background .5s ease;
     top: 0;
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 97%);
     transform: rotate(180deg);
-    margin-left: -24px;
+    margin-left: calc(-1 * var(--gutter));
   }
 
   &-tagline {
@@ -54,5 +49,10 @@
 
   &-copyright {
     font-size: 1.2rem;
+    text-align: center;
+  }
+
+  @media only screen and (min-width: 800px) {
+    padding-top: calc(var(--triangle-size) + 48px);
   }
 }

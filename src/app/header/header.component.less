@@ -17,7 +17,7 @@
 
   &-buttons {
     position: absolute;
-    right: 12px; 
+    right: var(--gutter); 
     display: flex;
     align-items: center;
   }
@@ -46,7 +46,7 @@
       background-color: transparent;
       border: none;
       cursor: pointer;
-      padding: 1px 5px 0 4px;
+      padding: 1px 0 0 4px;
       height: 24px;
 
       svg {
@@ -55,17 +55,31 @@
     }
   }
 
-  &-initials {
-    display: flex;
-    gap: 1px;
+  &-name {
     font-weight: 800;
     font-size: 2.6rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+
+    &-initials {
+      display: flex;
+      gap: 1px;
+    }
+
+    &-full {
+      display: none;
+    }
   }
 
   &[data-past-intro="true"] {
     --color-accent: var(--color-two);
     --color-header-border: var(--color-border);
     background-color: var(--site-bg);
+
+    .header-name {
+      opacity: 1;
+    }
   }
 
   [data-dark-mode="true"] & {
@@ -76,6 +90,23 @@
     &[data-past-intro="true"] {
       border-color: black;
       --color-accent: var(--color-four);
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    justify-content: flex-start;
+
+    &-name {
+      font-size: 2.2rem;
+      margin-left: var(--gutter);
+
+      &-initials {
+        display: none;
+      }
+      
+      &-full {
+        display: block;
+      }
     }
   }
 }

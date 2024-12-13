@@ -27,14 +27,21 @@ export class AppComponent {
 
   toggledDarkMode() {
     this.darkMode = !this.darkMode;
+    localStorage.setItem('dark-mode', JSON.stringify(this.darkMode));
   }
 
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
-      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        console.log('prefers dark mode')
-        this.darkMode = true;
-      }
+      const themeMode = localStorage.getItem('dark-mode')
+      if (themeMode) {
+        console.log('pref set!')
+        this.darkMode = JSON.parse(themeMode)
+      } else {
+          if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            console.log('prefers dark mode')
+            this.darkMode = true;
+          }
+      } 
     }
   }
 }

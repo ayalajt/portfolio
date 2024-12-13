@@ -6,12 +6,16 @@
 
     &-item {
       font-size: 1.6rem;
-      background-color: var(--color-two);
+      background-color: var(--color-accent);
       color: white;
       padding: 8px 12px;
       border-radius: 4px;
       font-weight: 400;
       pointer-events: none;
     }
+  }
+
+  [data-dark-mode="true"] & {
+    --color-accent: var(--color-three);
   }
 }

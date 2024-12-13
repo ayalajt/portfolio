@@ -1,4 +1,5 @@
 .header {
+  --color-accent: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,11 +8,11 @@
   left: 0;
   z-index: 5;
   width: 100%;
-  background-color: #090979;
-  border-bottom: 1px solid #090979;
+  background-color: var(--color-header);
+  border-bottom: 1px solid var(--color-header-border);
   transition: all .5s ease;
 
-  color: white;
+  color: var(--color-accent);
   height: var(--headerHeight);
 
   &-buttons {
@@ -21,7 +22,7 @@
     align-items: center;
   }
 
-  &-nightmode {
+  &-theme {
     &-button {
       border: none;
       background-color: transparent;
@@ -34,14 +35,13 @@
         height: 18px;
 
         path {
-          stroke: white;
+          stroke: var(--color-accent);
         }
       }
     }
   }
 
   &-hamburger {
-
     &-button {
       background-color: transparent;
       border: none;
@@ -49,9 +49,8 @@
       padding: 1px 5px 0 4px;
       height: 24px;
 
-
       svg {
-        fill: white;
+        fill: var(--color-accent);
       }
     }
   }
@@ -64,33 +63,19 @@
   }
 
   &[data-past-intro="true"] {
+    --color-accent: var(--color-two);
+    --color-header-border: var(--color-border);
     background-color: var(--site-bg);
-    color: var(--color-two);
-    border-bottom: 1px solid #d0d9db;
-
-    .header {
-      &-hamburger-button svg {
-        fill: var(--color-two);
-      }
-
-      &-nightmode-button svg path {
-        stroke: var(--color-two);
-      }
-    }
   }
 
   [data-dark-mode="true"] & {
-    &-nightmode-button svg path {
-      fill: white;
+    &-theme-button svg path {
+      fill: var(--color-accent);
     }
 
     &[data-past-intro="true"] {
       border-color: black;
-      --color-two: var(--color-four);
-
-      .header-nightmode-button svg path {
-        fill: var(--color-two);
-      }
+      --color-accent: var(--color-four);
     }
   }
 }

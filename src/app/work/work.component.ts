@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CarouselComponent } from '../carousel/carousel.component';
 
@@ -6,7 +6,8 @@ import { CarouselComponent } from '../carousel/carousel.component';
   selector: 'app-work',
   imports: [CommonModule, CarouselComponent],
   templateUrl: './work.component.html',
-  styleUrl: './work.component.less'
+  styleUrl: './work.component.less',
+  encapsulation: ViewEncapsulation.None,
 })
 export class WorkComponent {
   projects = [

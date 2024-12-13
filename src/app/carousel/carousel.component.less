@@ -6,4 +6,81 @@
   img {
     width: 100%;
   }
+
+  .flickity-prev-next-button {
+    top: unset;
+    transform: none;
+    width: 30px;
+    height: 30px;
+    bottom: -42px;
+    z-index: 2;
+    background-color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      --color-accent: var(--color-one);
+    }
+
+    &:active {
+      opacity: unset;
+    }
+  
+    svg {
+      fill: white;
+      top: unset;
+      left: unset;
+      width: 50%;
+      height: 50%;
+    }
+
+    &.previous {
+      right: 35px;
+      left: unset;
+    }
+  
+    &.next {
+      right: 0;
+    }
+  }
+
+  .flickity-page-dots {
+    height: 30px;
+    bottom: -42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      margin: 0 3px;
+      opacity: 1;
+      background-color: rgb(197, 197, 197);
+
+      &.is-selected {
+        background-color: rgb(19, 19, 19);
+      }
+    }
+  }
+
+  [data-dark-mode="true"] & {
+    --color-accent: var(--color-three);
+
+    .flickity-prev-next-button:hover {
+      --color-accent: var(--color-four);
+    }
+
+    .flickity-page-dots {
+      .dot {
+        background-color: white;
+
+        &.is-selected {
+          background-color: rgb(139, 139, 139);
+        }
+      }
+    }
+  }
 }

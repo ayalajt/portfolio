@@ -1,11 +1,12 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-carousel',
   imports: [CommonModule],
   templateUrl: './carousel.component.html',
-  styleUrl: './carousel.component.less'
+  styleUrl: './carousel.component.less',
+  encapsulation: ViewEncapsulation.None,
 })
 export class CarouselComponent {
   @Input() images!: any[]; 

@@ -3,10 +3,14 @@
   --color-two: #0b5bb1;
   --color-three: #0a69d1;
   --color-four: #0e76e5;
+  --color-five: #090979;
+  --color-border: #d0d9db;
   --site-bg: #f4fdff;
   --site-bg-dark: #161a25;
   --headerHeight: 56px;
-
+  --color-accent: var(--color-two);
+  --color-header: var(--color-five);
+  --color-header-border: var(--color-five);
 }
 
 html {
@@ -34,58 +38,4 @@ h2 {
 
 .section {
   padding-top: 32px;
-}
-
-.carousel {
-  .flickity-prev-next-button {
-    top: unset;
-    transform: none;
-    width: 30px;
-    height: 30px;
-    bottom: -42px;
-    z-index: 2;
-    background-color: var(--color-two);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &:hover {
-      background-color: var(--color-one);
-    }
-
-    &:active {
-      opacity: unset;
-    }
-  
-    svg {
-      fill: white;
-      top: unset;
-      left: unset;
-      width: 50%;
-      height: 50%;
-    }
-
-    &.previous {
-      right: 35px;
-      left: unset;
-    }
-  
-    &.next {
-      right: 0;
-    }
-  }
-
-  .flickity-page-dots {
-    height: 30px;
-    bottom: -42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .dot {
-      width: 8px;
-      height: 8px;
-      margin: 0 4px;
-    }
-  }
 }

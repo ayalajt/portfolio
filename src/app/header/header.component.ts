@@ -12,7 +12,6 @@ export class HeaderComponent {
   @Output() toggleDarkMode = new EventEmitter<any>(); 
 
   darkModeClick() {
-    console.log('clicked')
     this.toggleDarkMode.emit();
   }
 }

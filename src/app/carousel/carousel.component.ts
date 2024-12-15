@@ -25,7 +25,6 @@ export class CarouselComponent {
         wrapAround: 'true',
         imagesLoaded: 'true'
       })
-      console.log(this.carousel.nativeElement);
 
       flickity.resize()
     }

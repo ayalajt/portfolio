@@ -34,6 +34,7 @@
 
   &-items {
     display: flex;
+    flex-direction: column;
     gap: 8px;
   }
 
@@ -54,5 +55,9 @@
 
   @media only screen and (min-width: 800px) {
     padding-top: calc(var(--triangle-size) + 48px);
+
+    &-items {
+      flex-direction: row;
+    }
   }
 }

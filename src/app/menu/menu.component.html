@@ -1,1 +1,7 @@
-<p>menu works!</p>
+<div class="menu" [attr.data-menu-opened]="menuOpened">
+  <div class="menu-items">
+    <a class="menu-items-item" href="#about" (click)="closeMenu()">About Me</a>
+    <a class="menu-items-item" href="#skills" (click)="closeMenu()">Skills</a>
+    <a class="menu-items-item" href="#works" (click)="closeMenu()">Works</a>
+  </div>
+</div>

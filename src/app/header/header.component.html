@@ -8,9 +8,10 @@
       </button>
     </div>
     <div class="header-menu">
-      <button class="header-menu-button">
+      <button class="header-menu-button" (click)="menuClick()">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
       </button>
+      <app-menu [menuOpened]="menuToggled" (emitCloseMenu)="closeMenu()"></app-menu>
     </div>
   </div>
 

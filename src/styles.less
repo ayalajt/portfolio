@@ -7,14 +7,37 @@
   --color-border: #d0d9db;
   --site-bg: #f4fdff;
   --site-bg-dark: #161a25;
-  --headerHeight: 56px;
+
   --color-accent: var(--color-two);
   --color-header: var(--color-five);
   --color-header-border: var(--color-five);
+
   --gutter: 24px;
+  --headerHeight: 56px;
+
+  --heading-01: 2.4rem;
+  --heading-02: 1.8rem;
+  --heading-03: 2.0rem;
+  --body-01: 1.6rem;
+  --skills-01: 1.6rem;
+  --tagline-01: 2.2rem;
+  --header-name-01: 2.6rem;
+  --copyright-01: 1.2rem;
+  --intro-body-01: 2.2rem;
+  --intro-name-01: 8.0rem;
 
   @media only screen and (min-width: 800px) {
     --gutter: 48px;
+    --headerHeight: 62px;
+
+    --heading-01: 3.6rem;
+    --heading-02: 2.6rem;
+    --heading-03: 2.6rem;
+    --body-01: 1.8rem;
+    --skills-01: 2.0rem;
+    --header-name-01: 2.2rem;
+    --intro-body-01: 2.4rem;
+    --intro-name-01: 11.0rem;
   }
 }
 
@@ -31,14 +54,19 @@ body {
 h1 {
   margin: 0 0 12px 0;
   font-weight: 400;
-  font-size: 2.4rem;
+  font-size: var(--heading-01);
   text-align: center;
 }
 
 h2 {
   margin: 0 0 10px 0;
-  font-size: 1.8rem;
+  font-size: var(--heading-02);
   font-weight: 400;
+}
+
+h3 {
+  font-size: var(--heading-03);
+  margin: 0;
 }
 
 p {
@@ -51,13 +79,11 @@ p {
 
 @media only screen and (min-width: 800px) {
   h1 {
-    font-size: 3.6rem;
     text-align: left;
     margin-bottom: 16px;
   }
 
   h2 {
-    font-size: 2.6rem;
     margin-bottom: 12px;
   }
 

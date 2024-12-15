@@ -1,7 +1,7 @@
 <div class="work-items">
   <div class="work" *ngFor="let project of projects">
     <div class="work-content">
-      <p *ngIf="project.name" class="work-name">{{project.name}}</p>
+      <h3 *ngIf="project.name" class="work-name">{{project.name}}</h3>
       <p *ngIf="project.year" class="work-year">{{project.year}}</p>
       <p *ngIf="project.description" class="work-description">{{project.description}}</p>
       <a *ngIf="project.link" class="work-link" [href]="project.link" target="_blank">

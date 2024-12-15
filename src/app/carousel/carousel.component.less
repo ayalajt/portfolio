@@ -1,8 +1,11 @@
 .carousel {
+  --button-size: 30px;
+  --dot-size: 7px;
+  --button-margin: calc((var(--button-size) + 12px) * -1);
   width: 100%;
-  margin: 0 auto 42px auto;
+  margin: 0 auto calc(var(--button-margin) * -1) auto;
   box-shadow: 0px 10px 20px 5px rgba(59, 47, 48, .08);
-
+  
   img {
     width: 100%;
   }
@@ -10,9 +13,9 @@
   .flickity-prev-next-button {
     top: unset;
     transform: none;
-    width: 30px;
-    height: 30px;
-    bottom: -42px;
+    width: var(--button-size);
+    height: var(--button-size);
+    bottom: var(--button-margin);
     z-index: 2;
     background-color: var(--color-accent);
     display: flex;
@@ -36,7 +39,7 @@
     }
 
     &.previous {
-      right: 35px;
+      right: calc(var(--button-size) + 5px);
       left: unset;
     }
   
@@ -46,16 +49,16 @@
   }
 
   .flickity-page-dots {
-    height: 30px;
-    bottom: -42px;
+    height: var(--button-size);
+    bottom: var(--button-margin);
     display: flex;
     align-items: center;
     justify-content: center;
     pointer-events: none;
 
     .dot {
-      width: 7px;
-      height: 7px;
+      width: var(--dot-size);
+      height: var(--dot-size);
       margin: 0 3px;
       opacity: 1;
       background-color: rgb(197, 197, 197);
@@ -80,6 +83,17 @@
         &.is-selected {
           background-color: rgb(139, 139, 139);
         }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    --button-size: 36px;
+    --dot-size: 8px;
+
+    .flickity-prev-next-button {
+      &.previous {
+        right: calc(var(--button-size) + 6px);
       }
     }
   }

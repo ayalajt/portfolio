@@ -13,6 +13,7 @@
     flex-direction: column;
     gap: 8px;
     text-align: center;
+    font-size: 1.6rem;
   }
 
   &-carousel {
@@ -24,12 +25,7 @@
     font-weight: 500;
   }
 
-  &-year {
-    font-size: 1.6rem;
-  }
-
   &-link {
-    font-size: 1.6rem;
     font-weight: 400;
     text-decoration: none;
     text-align: center;
@@ -55,15 +51,39 @@
     }
   }
 
-  &-description {
-    font-size: 1.6rem;
-  }
-
   [data-dark-mode="true"] & {
     --color-accent: var(--color-three);
 
     &-link:hover {
       --color-accent: var(--color-four);
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    flex-direction: row;
+    gap: 32px;
+
+    &-items {
+      gap: 72px;
+    }
+
+    &-carousel {
+      min-width: 45%;
+      margin-top: 4px;
+    }
+
+    &-content {
+      text-align: left;
+      font-size: 1.8rem;
+      gap: 12px;
+    }
+
+    &-name {
+      font-size: 2.6rem;
+    }
+
+    &-link {
+      margin-left: 0;
     }
   }
 }

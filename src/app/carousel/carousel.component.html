@@ -1,3 +1,5 @@
-<div class="carousel" [attr.data-flickity]="flickityOptions">
+<div #carousel class="carousel">
   <img *ngFor="let image of images" class="carousel-image" [src]="image"/>
 </div>
+
+<!-- [attr.data-flickity]="flickityOptions" -->

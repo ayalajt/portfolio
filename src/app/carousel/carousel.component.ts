@@ -1,5 +1,6 @@
-import { Component, Input, ViewEncapsulation } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, ElementRef, Inject, Input, PLATFORM_ID, ViewChild, ViewEncapsulation } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
+declare var Flickity: any;
 
 @Component({
   selector: 'app-carousel',
@@ -10,6 +11,24 @@ import { CommonModule } from '@angular/common';
 })
 export class CarouselComponent {
   @Input() images!: any[]; 
-  flickityOptions = '{ "cellAlign": "left", "contain": "true", "wrapAround": "true"}'
+  @ViewChild('carousel') carousel!: ElementRef;
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  
+  flickityOptions = '{ "cellAlign": "left", "contain": "true", "wrapAround": "true", "imagesLoaded": "true"}'
+
+  ngAfterViewInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      const carouselElem = this.carousel.nativeElement;
+      let flickity = new Flickity(carouselElem, {
+        cellAlign: 'left',
+        contain: 'true',
+        wrapAround: 'true',
+        imagesLoaded: 'true'
+      })
+      console.log(this.carousel.nativeElement);
+
+      flickity.resize()
+    }
+  }
 }
 

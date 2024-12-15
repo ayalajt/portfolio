@@ -15,10 +15,30 @@
     }
   }
 
+  &-wrapper {
+    &.misc {
+      margin-top: 12px;
+    }
+  }
+
   [data-dark-mode="true"] & {
     --color-accent: var(--color-three);
   }
 
   @media only screen and (min-width: 800px) {
+    &-items {
+      gap: 12px;
+
+      &-item {
+        font-size: 2rem;
+        padding: 9px 16px;
+      }
+    }
+
+    &-wrapper {
+      &.misc {
+        margin-top: 24px;
+      }
+    }
   }
 }

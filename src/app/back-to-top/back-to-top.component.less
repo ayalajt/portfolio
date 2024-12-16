@@ -1,0 +1,44 @@
+.backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 4;
+  opacity: 0;
+  pointer-events: none;
+  transition: all var(--button-timing) ease;
+  background-color: var(--color-accent);
+  border: none;
+  padding: 8px 4px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    --color-accent: var(--color-one)
+  }
+
+  svg {
+    color: white;
+    width: 30px;
+    height: 30px;
+  }
+
+  &[data-display-button="true"] {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  [data-dark-mode="true"] & {
+    --color-accent: var(--color-three);
+
+    &:hover {
+      --color-accent: var(--color-four)
+    }
+  }
+
+  @media only screen and (min-width: 800px) {
+    right: 32px;
+  }
+}

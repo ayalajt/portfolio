@@ -17,7 +17,9 @@ export class IntroComponent {
 
   @HostListener('window:scroll', ['$event'])
   onScroll() {
-    this.checkPastIntro()
+    setTimeout(() => {
+      this.checkPastIntro()
+    }, 50)
   }
 
   ngAfterViewInit() {

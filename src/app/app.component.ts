@@ -6,11 +6,12 @@ import { SkillsComponent } from './skills/skills.component';
 import { WorksComponent } from './works/works.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { BackToTopComponent } from './back-to-top/back-to-top.component';
 import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, IntroComponent, AboutComponent, SkillsComponent, WorksComponent, FooterComponent, HeaderComponent],
+  imports: [RouterOutlet, IntroComponent, AboutComponent, SkillsComponent, WorksComponent, FooterComponent, HeaderComponent, BackToTopComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.less'
 })

@@ -57,7 +57,6 @@
 
 html {
   font-size: 10px;
-  scroll-padding-top: var(--headerHeight);
   scroll-behavior: smooth;
 }
 
@@ -91,6 +90,7 @@ p {
 
 .section {
   padding-top: 128px;
+  scroll-margin-top: calc(var(--headerHeight) - 100px);
 }
 
 @media only screen and (min-width: 800px) {
@@ -100,5 +100,7 @@ p {
 
   .section {
     padding-top: 160px;
+    scroll-margin-top: calc(var(--headerHeight) - 128px);
+
   }
 }

@@ -17,7 +17,7 @@ export class WorkComponent {
       year: "2023 - 2024",
       link: "https://www.jnj.com",
       images: [
-        "/images/jnj.png", "/images/our-heritage.png"
+        "/images/jnj/jnj-01.webp", "/images/our-heritage.png"
       ]
     },
     {

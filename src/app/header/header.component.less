@@ -21,6 +21,8 @@
     right: var(--gutter); 
     display: flex;
     align-items: center;
+    animation: fadeIn var(--anim-fade-time) var(--anim-fade-delay) forwards;
+    opacity: 0;
   }
 
   &-theme {
@@ -121,6 +123,15 @@
       &-full {
         display: block;
       }
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0
+    }
+    to {
+      opacity: 1;
     }
   }
 }

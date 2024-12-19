@@ -37,7 +37,7 @@ export class WorkComponent {
       year: "2024",
       link: "https://www.jnj.com/our-heritage/",
       images: [
-        "/images/jnj.png", "/images/our-heritage.png"
+        "/images/heritage/heritage-01.webp", "/images/heritage/heritage-02.webp", "/images/heritage/heritage-03.webp", "/images/heritage/heritage-04.webp", "/images/heritage/heritage-05.webp", "/images/heritage/heritage-06.webp"
       ]    
     },
     {

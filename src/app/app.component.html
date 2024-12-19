@@ -2,9 +2,13 @@
   <div class="app-content">
     <app-header [applyIntroScrolled]="pastIntro" (toggleDarkMode)="toggledDarkMode()"></app-header>
     <app-intro (checkIntroScrolled)="scrolledPastIntro($event)"></app-intro>
-    <app-about></app-about>
-    <app-skills></app-skills>
-    <app-works></app-works>
+
+    <div class="app-content-body">
+      <app-about></app-about>
+      <app-skills></app-skills>
+      <app-works></app-works>
+    </div>
+
     <app-footer></app-footer>
     <app-back-to-top></app-back-to-top>
   </div>

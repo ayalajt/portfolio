@@ -12,17 +12,28 @@ import { CarouselComponent } from '../carousel/carousel.component';
 export class WorkComponent {
   projects = [
     {
-      name: "Johnson & Johnson's Primary Site",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      name: "Johnson & Johnson",
+      description: 
+      `Developed and maintained Johnson & Johnson's primary website during their rebranding initiative. 
+      Created modules from Figma designs, including promo modules, lists, video players, 
+      article layouts, header, footer, and carousels. Implemented multiple CSS animations for 
+      page leads, list hover states, and galleries. Ensured the site was completely accessible via 
+      keyboard navigation and WCAG compliant.`,
       year: "2023 - 2024",
       link: "https://www.jnj.com",
       images: [
-        "/images/jnj/jnj-01.webp", "/images/our-heritage.png"
+        "/images/jnj/jnj-01.webp", "/images/jnj/jnj-03.webp"
       ]
     },
     {
       name: "J&J: Our Heritage",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      description: `
+      Individually developed a highly immersive article experience, a first-of-its-kind feature on 
+      Johnson & Johnson's primary site. Worked closely with the client and the design team to 
+      ensure a seamless and responsive user experience across mobile and desktop. Developed 
+      custom module variations for promos, videos, galleries, and quotes, elevating the 
+      storytelling and user engagement within articles.
+      `,
       year: "2024",
       link: "https://www.jnj.com/our-heritage/",
       images: [

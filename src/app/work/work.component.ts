@@ -22,7 +22,7 @@ export class WorkComponent {
       year: "2023 - 2024",
       link: "https://www.jnj.com",
       images: [
-        "/images/jnj/jnj-01.webp", "/images/jnj/jnj-03.webp"
+        "/images/jnj/jnj-01.webp", "/images/jnj/jnj-02.webp", "/images/jnj/jnj-03.webp", "/images/jnj/jnj-04.webp", "/images/jnj/jnj-05.webp", "/images/jnj/jnj-06.webp", "/images/jnj/jnj-07.webp"
       ]
     },
     {
@@ -69,11 +69,13 @@ export class WorkComponent {
     },
     {
       name: "WBEZ Chicago",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+      description: 
+      `Individually designed and implemented the Events Calendar, providing users with a streamlined 
+      overview of upcoming events presented by WBEZ Chicago.`,
       year: "2024",
-      link: "https://innovativemedicine.jnj.com/",
+      link: "https://www.wbez.org/events-calendar",
       images: [
-        "/images/jnj.png", "/images/our-heritage.png"
+        "/images/wbez/wbez-01.webp", "/images/wbez/wbez-02.webp", "/images/wbez/wbez-03.webp"
       ]    
     },
     {

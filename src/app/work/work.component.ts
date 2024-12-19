@@ -46,7 +46,7 @@ export class WorkComponent {
       year: "2024",
       link: "https://innovativemedicine.jnj.com/",
       images: [
-        "/images/jnj.png", "/images/our-heritage.png"
+        "/images/im/im-01.webp", "/images/im/im-02.webp", "/images/im/im-03.webp", "/images/im/im-04.webp", "/images/im/im-05.webp", "/images/im/im-06.webp", "/images/im/im-07.webp"
       ]    
     },
     {
@@ -55,7 +55,7 @@ export class WorkComponent {
       year: "2023 - 2024",
       link: "https://innovativemedicine.jnj.com/",
       images: [
-        "/images/jnj.png", "/images/our-heritage.png"
+        "/images/mhcw/mhcw-01.webp", "/images/mhcw/mhcw-02.webp", "/images/mhcw/mhcw-03.webp", "/images/mhcw/mhcw-04.webp", "/images/mhcw/mhcw-05.webp", "/images/mhcw/mhcw-06.webp", "/images/mhcw/mhcw-07.webp"
       ]    
     },
     {
@@ -64,7 +64,7 @@ export class WorkComponent {
       year: "2023 - 2024",
       link: "https://innovativemedicine.jnj.com/",
       images: [
-        "/images/jnj.png", "/images/our-heritage.png"
+        "/images/kenvue/kenvue-01.webp", "/images/kenvue/kenvue-02.webp", "/images/kenvue/kenvue-03.webp", "/images/kenvue/kenvue-04.webp", "/images/kenvue/kenvue-05.webp", "/images/kenvue/kenvue-06.webp"
       ]    
     },
     {

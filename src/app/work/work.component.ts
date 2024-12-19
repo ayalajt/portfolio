@@ -53,7 +53,7 @@ export class WorkComponent {
       name: "My Health Can't Wait",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
       year: "2023 - 2024",
-      link: "https://innovativemedicine.jnj.com/",
+      link: "https://www.myhealthcantwait.com/",
       images: [
         "/images/mhcw/mhcw-01.webp", "/images/mhcw/mhcw-02.webp", "/images/mhcw/mhcw-03.webp", "/images/mhcw/mhcw-04.webp", "/images/mhcw/mhcw-05.webp", "/images/mhcw/mhcw-06.webp", "/images/mhcw/mhcw-07.webp"
       ]    
@@ -62,7 +62,7 @@ export class WorkComponent {
       name: "Kenvue",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
       year: "2023 - 2024",
-      link: "https://innovativemedicine.jnj.com/",
+      link: "https://www.kenvue.com/",
       images: [
         "/images/kenvue/kenvue-01.webp", "/images/kenvue/kenvue-02.webp", "/images/kenvue/kenvue-03.webp", "/images/kenvue/kenvue-04.webp", "/images/kenvue/kenvue-05.webp", "/images/kenvue/kenvue-06.webp"
       ]    
@@ -81,17 +81,17 @@ export class WorkComponent {
     {
       name: "Lolita's Tip Tool",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      year: "2023 - 2024",
+      year: "2022 - 2024",
       images: [
-        "/images/jnj.png", "/images/our-heritage.png"
+        "/images/calc/calc-01.webp", "/images/calc/calc-02.webp", "/images/calc/calc-03.webp", "/images/calc/calc-04.webp" 
       ]    
     },
     {
       name: "Lolita's Invoice Tool",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-      year: "2023",
+      year: "2022 - 2023",
       images: [
-        "/images/jnj.png", "/images/our-heritage.png"
+        "/images/invoices/invoices-01.webp", "/images/invoices/invoices-02.webp", "/images/invoices/invoices-03.webp"
       ]    
     }
   ]

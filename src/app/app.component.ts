@@ -17,10 +17,12 @@ import { isPlatformBrowser } from '@angular/common';
 })
 export class AppComponent {
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
   title = 'portfolio';
   pastIntro = false;
   darkMode = false;
   passedValue = '';
+  forceMenuClose = false;
 
   scrolledPastIntro(newValue: boolean) {
     this.pastIntro = newValue;

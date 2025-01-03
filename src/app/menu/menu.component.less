@@ -7,6 +7,8 @@
   right: calc(var(--menu-size) * -1);
   top: var(--headerHeight);
   transition: all .5s ease;
+  border-left: 1px solid var(--color-header-border);
+  box-sizing: border-box;
 
   &-items {
     display: flex;
@@ -56,6 +58,10 @@
         color: var(--color-four);
       }
     }
+  }
+
+  [data-dark-mode="true"] [data-past-intro="true"] & {
+    --color-header-border: #000000;
   }
 
   @media only screen and (min-width: 800px) {

@@ -238,11 +238,11 @@ export class WorkComponent {
       year: "2022 - 2024",
       images: [
         {
-          src: "/images/calc/calc-01.webp",
+          src: "/images/calc/calc-01-new.webp",
           alt: "Homepage of Tip Calculator site"
         },
         {
-          src: "/images/calc/calc-02.webp",
+          src: "/images/calc/calc-01.webp",
           alt: "Results when using Tip Calculator site"
         },
         {

@@ -23,7 +23,8 @@ export class CarouselComponent {
         cellAlign: 'left',
         contain: 'true',
         wrapAround: 'true',
-        imagesLoaded: 'true'
+        imagesLoaded: 'true',
+        lazyLoad: 'true',
       })
 
       flickity.resize()

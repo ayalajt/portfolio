@@ -9,6 +9,12 @@
   img {
     width: 100%;
     height: auto;
+    opacity: 0;
+    transition: opacity .8s ease;
+
+    &.is-selected {
+      opacity: 1 !important;
+    }
   }
 
   .flickity-prev-next-button {

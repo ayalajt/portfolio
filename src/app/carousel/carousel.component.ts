@@ -21,11 +21,11 @@ export class CarouselComponent {
       const carouselElem = this.carousel.nativeElement;
       let flickity = new Flickity(carouselElem, {
         cellAlign: 'left',
-        contain: 'true',
+        contain: 'false',
         wrapAround: 'true',
         imagesLoaded: 'true',
         lazyLoad: 'true',
-        fade: 'true'
+        fade: 'true',
       })
 
       flickity.resize()

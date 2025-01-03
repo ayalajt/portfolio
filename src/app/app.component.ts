@@ -37,11 +37,9 @@ export class AppComponent {
     if (isPlatformBrowser(this.platformId)) {
       const themeMode = localStorage.getItem('dark-mode')
       if (themeMode) {
-        console.log('pref set!')
         this.darkMode = JSON.parse(themeMode)
       } else {
           if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            console.log('prefers dark mode')
             this.darkMode = true;
           }
       } 

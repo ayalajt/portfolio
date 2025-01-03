@@ -29,6 +29,7 @@
   }
 
   &-name {
+    font-size: var(--heading-03);
     font-weight: 500;
   }
 
@@ -68,7 +69,16 @@
   }
 
   [data-dark-mode="true"] & {
-    --color-accent: var(--color-three);
+    --color-accent: var(--color-three); 
+
+    &-link {
+      background-color: var(--color-three);
+      color: white;
+
+      svg {
+        fill: white
+      }
+    }
 
     &-link:hover {
       background-color: var(--color-four);

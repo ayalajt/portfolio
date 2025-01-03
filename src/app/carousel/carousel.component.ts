@@ -24,7 +24,7 @@ export class CarouselComponent {
         contain: 'false',
         wrapAround: 'true',
         imagesLoaded: 'true',
-        lazyLoad: 'true',
+        lazyLoad: 1,
         fade: 'true',
       })
 

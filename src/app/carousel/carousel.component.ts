@@ -25,7 +25,6 @@ export class CarouselComponent {
         wrapAround: 'true',
         imagesLoaded: 'true',
         lazyLoad: 1,
-        fade: 'true',
       })
 
       flickity.resize()

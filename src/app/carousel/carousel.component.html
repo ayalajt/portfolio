@@ -1,3 +1,10 @@
 <div #carousel class="carousel">
-  <img *ngFor="let image of images" class="carousel-image" width="1440" height="918" [attr.data-flickity-lazyload]="image"/>
+  <img *ngFor="let image of images" class="carousel-image" width="1440" height="918" [attr.data-flickity-lazyload]="image.src" [alt]="image.alt"/>
 </div>
+
+<!-- <img *ngFor="let image of images"
+  srcset="{{image.src}}-mobile.webp, {{image.src}}.webp 2x"
+  sizes="(max-width:800px) 750px, 1440px"
+  attr.data-flickity-lazyload="{{image.src}}.webp"
+  [alt]="image.alt"
+/> -->

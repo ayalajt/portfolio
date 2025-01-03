@@ -22,7 +22,34 @@ export class WorkComponent {
       year: "2023 - 2024",
       link: "https://www.jnj.com",
       images: [
-        "/images/jnj/jnj-01.webp", "/images/jnj/jnj-02.webp", "/images/jnj/jnj-03.webp", "/images/jnj/jnj-04.webp", "/images/jnj/jnj-05.webp", "/images/jnj/jnj-06.webp", "/images/jnj/jnj-07.webp"
+        {
+          src: "/images/jnj/jnj-01.webp",
+          alt: "Homepage of Johnson & Johnson's website"
+        },
+        {
+          src: "/images/jnj/jnj-02.webp",
+          alt: "Image carousel on Johnson & Johnson's website"
+        },
+        {
+          src: "/images/jnj/jnj-03.webp",
+          alt: "Latest news promo module on Johnson & Johnson's website"
+        },
+        {
+          src: "/images/jnj/jnj-04.webp",
+          alt: "Article headline on Johnson & Johnson's website"
+        },
+        {
+          src: "/images/jnj/jnj-05.webp",
+          alt: "Article content on Johnson & Johnson's website"
+        },
+        {
+          src: "/images/jnj/jnj-06.webp",
+          alt: "Search module on Johnson & 'Johnson's website"
+        },
+        {
+          src: "/images/jnj/jnj-07.webp",
+          alt: "Page lead on Johnson & Johnson's website"
+        }
       ]
     },
     {
@@ -37,8 +64,31 @@ export class WorkComponent {
       year: "2024",
       link: "https://www.jnj.com/our-heritage/our-beginning",
       images: [
-        "/images/heritage/heritage-01.webp", "/images/heritage/heritage-02.webp", "/images/heritage/heritage-03.webp", "/images/heritage/heritage-04.webp", "/images/heritage/heritage-05.webp", "/images/heritage/heritage-06.webp"
-      ]    
+        {
+          src: "/images/heritage/heritage-01.webp",
+          alt: "Article introduction for J&J Our Heritage"
+        },
+        {
+          src: "/images/heritage/heritage-02.webp",
+          alt: "Article's chapter headline for J&J Our Heritage"
+        },
+        {
+          src: "/images/heritage/heritage-03.webp",
+          alt: "Quote in article for J&J Our Heritage"
+        },
+        {
+          src: "/images/heritage/heritage-04.webp",
+          alt: "Image carousel in article for J&J Our Heritage"
+        },
+        {
+          src: "/images/heritage/heritage-05.webp",
+          alt: "Text content in article for J&J Our Heritage"
+        },
+        {
+          src: "/images/heritage/heritage-06.webp",
+          alt: "Footer in article for J&J Our Heritage"
+        }
+      ] 
     },
     {
       name: "Innovative Medicine",
@@ -50,8 +100,35 @@ export class WorkComponent {
       year: "2024",
       link: "https://innovativemedicine.jnj.com/",
       images: [
-        "/images/im/im-01.webp", "/images/im/im-02.webp", "/images/im/im-03.webp", "/images/im/im-04.webp", "/images/im/im-05.webp", "/images/im/im-06.webp", "/images/im/im-07.webp"
-      ]    
+        {
+          src: "/images/im/im-01.webp",
+          alt: "Homepage of Innovative Medicine"
+        },
+        {
+          src: "/images/im/im-02.webp",
+          alt: "Homepage content of Innovative Medicine"
+        },
+        {
+          src: "/images/im/im-03.webp",
+          alt: "Image carousel on Innovatie Medicine's homepage"
+        },
+        {
+          src: "/images/im/im-04.webp",
+          alt: "Promo module on Innovative Medicine's homepage"
+        },
+        {
+          src: "/images/im/im-05.webp",
+          alt: "Article headline on Innovative Medicine's website"
+        },
+        {
+          src: "/images/im/im-06.webp",
+          alt: "Page content on Innovative Medicine's website"
+        },
+        {
+          src: "/images/im/im-07.webp",
+          alt: "Search functionality on Innovative's medicine"
+        },
+      ]     
     },
     {
       name: "My Health Can't Wait",
@@ -62,21 +139,71 @@ export class WorkComponent {
       year: "2023 - 2024",
       link: "https://www.myhealthcantwait.com/",
       images: [
-        "/images/mhcw/mhcw-01.webp", "/images/mhcw/mhcw-02.webp", "/images/mhcw/mhcw-03.webp", "/images/mhcw/mhcw-04.webp", "/images/mhcw/mhcw-05.webp", "/images/mhcw/mhcw-06.webp", "/images/mhcw/mhcw-07.webp"
-      ]    
+        {
+          src: "/images/mhcw/mhcw-01.webp",
+          alt: "Homepage for My Health Can't Wait"
+        },
+        {
+          src: "/images/mhcw/mhcw-02.webp",
+          alt: "Homepage content for My Health Can't Wait"
+        },
+        {
+          src: "/images/mhcw/mhcw-03.webp",
+          alt: "Video carousel for My Health Can't Wait"
+        },
+        {
+          src: "/images/mhcw/mhcw-04.webp",
+          alt: "Accordion module for My Health Can't Wait"
+        },
+        {
+          src: "/images/mhcw/mhcw-05.webp",
+          alt: "Icon list with text for My Health Can't Wait"
+        },
+        {
+          src: "/images/mhcw/mhcw-06.webp",
+          alt: "Icon list without text for My Health Can't Wait"
+        },
+        {
+          src: "/images/mhcw/mhcw-07.webp",
+          alt: "Quote carousel for My Health Can't Wait"
+        },
+      ]
     },
     {
       name: "Kenvue",
       description: `
       Provided front-end maintenance for a Johnson & Johnson subsidiary website, implementing key 
-      updates to enhance functionality. Developed and updated homepage modules and footer, as well 
+      updates to enhance functionality. Developed and updated homepage modules, icon lists, and footer, as well 
       as overhauled site typography with a new font style. Extensively optimized images for 
       responsiveness across devices, and ensured all updates met accessibility standards`,
       year: "2023 - 2024",
       link: "https://www.kenvue.com/",
       images: [
-        "/images/kenvue/kenvue-01.webp", "/images/kenvue/kenvue-02.webp", "/images/kenvue/kenvue-03.webp", "/images/kenvue/kenvue-04.webp", "/images/kenvue/kenvue-05.webp", "/images/kenvue/kenvue-06.webp"
-      ]    
+        {
+          src: "/images/kenvue/kenvue-01.webp",
+          alt: "Homepage for Kenvue"
+        },
+        {
+          src: "/images/kenvue/kenvue-02.webp",
+          alt: "Homepage content for Kenvue"
+        },
+        {
+          src: "/images/kenvue/kenvue-03.webp",
+          alt: "Page content for Kenvue"
+        },
+        {
+          src: "/images/kenvue/kenvue-04.webp",
+          alt: "Person icon list for Kenvue"
+        },
+        {
+          src: "/images/kenvue/kenvue-05.webp",
+          alt: "Search functionality for Kenvue"
+        },
+        {
+          src: "/images/kenvue/kenvue-06.webp",
+          alt: "Article content for Kenvue"
+        },
+      ]   
     },
     {
       name: "WBEZ Chicago",
@@ -86,8 +213,19 @@ export class WorkComponent {
       year: "2024",
       link: "https://www.wbez.org/events-calendar",
       images: [
-        "/images/wbez/wbez-01.webp", "/images/wbez/wbez-02.webp", "/images/wbez/wbez-03.webp"
-      ]    
+        {
+          src: "/images/wbez/wbez-01.webp",
+          alt: "Homepage of WBEZ Chicago"
+        },
+        {
+          src: "/images/wbez/wbez-02.webp",
+          alt: "Events list of WBEZ Chicago"
+        },
+        {
+          src: "/images/wbez/wbez-03.webp",
+          alt: "Event details of WBEZ Chicago"
+        },
+      ]
     },
     {
       name: "Lolita's Tip Tool",
@@ -99,8 +237,23 @@ export class WorkComponent {
       JS, CSS, and a Google Firebase Database.`,
       year: "2022 - 2024",
       images: [
-        "/images/calc/calc-01.webp", "/images/calc/calc-02.webp", "/images/calc/calc-03.webp", "/images/calc/calc-04.webp" 
-      ]    
+        {
+          src: "/images/calc/calc-01.webp",
+          alt: "Homepage of Tip Calculator site"
+        },
+        {
+          src: "/images/calc/calc-02.webp",
+          alt: "Results when using Tip Calculator site"
+        },
+        {
+          src: "/images/calc/calc-03.webp",
+          alt: "Homepage and results of Tip History"
+        },
+        {
+          src: "/images/calc/calc-04.webp",
+          alt: "Combined results when using Tip History"
+        }
+      ]
     },
     {
       name: "Lolita's Invoice Tool",
@@ -111,8 +264,19 @@ export class WorkComponent {
       JS, CSS, and a Google Firebase Database.`,
       year: "2022 - 2023",
       images: [
-        "/images/invoices/invoices-01.webp", "/images/invoices/invoices-02.webp", "/images/invoices/invoices-03.webp"
-      ]    
+        {
+          src: "/images/invoices/invoices-01.webp",
+          alt: "Homepage of Invoice Tool site"
+        },
+        {
+          src: "/images/invoices/invoices-02.webp",
+          alt: "Expanded results when using Invoice Tool site"
+        },
+        {
+          src: "/images/invoices/invoices-03.webp",
+          alt: "Combined results when using Invoice Tool site"
+        }
+      ]   
     }
   ]
 }

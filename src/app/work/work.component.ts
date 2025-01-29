@@ -12,6 +12,31 @@ import { CarouselComponent } from '../carousel/carousel.component';
 export class WorkComponent {
   projects = [
     {
+      name: "Illustration Portfolio",
+      description: `Created a minimalist portfolio website for an illustrator to showcase their work. Prioritized high
+      quality images, performance, accessibility, and responsiveness across mobile and desktop devices. Hosted on Netlify, developed with EJS and LESS.`,
+      year: "2025",
+      link: "https://www.helenbodde.com",
+      images: [
+        {
+          src: "/images/art/art-01.webp",
+          alt: "Homepage of Graphic Designer Site"
+        },
+        {
+          src: "/images/art/art-02.webp",
+          alt: "Lightbox image opened in Graphic Designer Site"
+        },
+        {
+          src: "/images/art/art-03.webp",
+          alt: "Concept art and footer of Graphic Designer Site"
+        },
+        {
+          src: "/images/art/art-04.webp",
+          alt: "Social media designs in Graphic Designer Site"
+        }
+      ]
+    },
+    {
       name: "Johnson & Johnson",
       description: 
       `Developed and maintained Johnson & Johnson's primary website during their rebranding initiative. 

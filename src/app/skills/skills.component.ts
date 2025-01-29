@@ -9,6 +9,6 @@ import { CommonModule } from '@angular/common';
   encapsulation: ViewEncapsulation.None,
 })
 export class SkillsComponent {
- skillsFrontEnd = ["HTML", "JavaScript", "CSS", "LESS", "Handlebars", "TypeScript", "Angular", "GSAP", "Flickity"];
+ skillsFrontEnd = ["HTML", "JavaScript", "CSS", "LESS", "Handlebars", "EJS", "TypeScript", "Angular", "GSAP", "Flickity", "NodeJS", "Express"];
  skillsMisc = ["Git", "Jira", "Figma", "Docker", "VSCode", "Brightspot CMS", "Firebase Database"]
 }
